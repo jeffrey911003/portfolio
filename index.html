@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jeffrey Portfolio｜作品集</title>
+  <meta name="description" content="Jeffrey 的程式作品集：資料分析、機器學習與全端網頁開發。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="container">
+      <a class="nav-logo" href="index.html">jeffrey<span>.dev</span></a>
+      <ul class="nav-links">
+        <li><a href="#works">作品</a></li>
+        <li><a href="#about">關於我</a></li>
+        <li><a href="#contact">聯絡</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="container">
+      <p class="hero-eyebrow">// Hi, I'm Jeffrey</p>
+      <h1>用資料與程式，<br>做出真的能用的產品。</h1>
+      <p>我專注在資料分析、機器學習與全端網頁開發，從資料處理、模型訓練、API 串接到前端介面都自己完成。</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#works">看我的作品 →</a>
+        <a class="btn btn-ghost" href="https://github.com/jeffrey911003" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="section" id="works">
+    <div class="container">
+      <h2 class="section-title">作品</h2>
+      <p class="section-sub">每一件都是從資料到網頁、獨立完成的專案。</p>
+
+      <div class="works-grid">
+        <!-- WORKS:START（新作品卡片加在這一行下方，規則見 CLAUDE.md 第 6 節） -->
+
+        <a class="work-card" href="works/web-recommend.html">
+          <img src="assets/images/works/web-recommend/cover.webp" alt="網頁推薦系統數據分析後台畫面，顯示 Top-3 推薦網頁結果" loading="lazy">
+          <div class="work-card-body">
+            <span class="work-card-date">2026.06</span>
+            <h3>網頁推薦系統</h3>
+            <p>匯入企業的用戶瀏覽紀錄，用機器學習預測並產出 Top-K 推薦網頁，幫助提升首頁點擊率。</p>
+            <div class="tags">
+              <span class="tag">Python</span>
+              <span class="tag">HistGradientBoosting</span>
+              <span class="tag">React</span>
+            </div>
+          </div>
+        </a>
+
+        <a class="work-card" href="works/pitchlab.html">
+          <img src="assets/images/works/pitchlab/cover.webp" alt="PitchLab 首頁，標語為 Predict the play. Win smarter." loading="lazy">
+          <div class="work-card-body">
+            <span class="work-card-date">2026.05</span>
+            <h3>PitchLab 棒球數據分析平台</h3>
+            <p>用 MLB Statcast 數據分析每一球，提供歷史數據篩選、球員比較與投球預測。</p>
+            <div class="tags">
+              <span class="tag">Python</span>
+              <span class="tag">FastAPI</span>
+              <span class="tag">React</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- WORKS:END -->
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="about">
+    <div class="container about-grid">
+      <div>
+        <h2 class="section-title">關於我</h2>
+        <p>我是 Jeffrey，喜歡把「一大堆資料」變成「看得懂、用得到」的東西。</p>
+        <p>我的作品通常包含完整的流程：用 Python 清理與分析資料、訓練模型，再用 FastAPI 提供 API，最後用 React 做成可以直接操作的網頁並部署上線。</p>
+      </div>
+      <div>
+        <div class="skill-group">
+          <h4>資料 / 機器學習</h4>
+          <div class="tags"><span class="tag">Python</span><span class="tag">pandas</span><span class="tag">scikit-learn</span></div>
+        </div>
+        <div class="skill-group">
+          <h4>後端</h4>
+          <div class="tags"><span class="tag">FastAPI</span><span class="tag">REST API</span></div>
+        </div>
+        <div class="skill-group">
+          <h4>前端 / 部署</h4>
+          <div class="tags"><span class="tag">React</span><span class="tag">Render</span><span class="tag">Vercel</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <div class="container">
+      <h2 class="section-title">聯絡</h2>
+      <p class="section-sub">想聊聊作品或合作，歡迎透過 GitHub 找我。</p>
+      <a class="btn btn-ghost" href="https://github.com/jeffrey911003" target="_blank" rel="noopener">github.com/jeffrey911003</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <span>© <span data-year>2026</span> Jeffrey</span>
+      <span>Built with HTML &amp; CSS · Hosted on GitHub Pages</span>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

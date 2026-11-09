@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>網頁推薦系統｜Jeffrey Portfolio</title>
+  <meta name="description" content="匯入企業的用戶瀏覽紀錄，用機器學習預測並產出 Top-K 推薦網頁，幫助提升首頁點擊率。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="container">
+      <a class="nav-logo" href="../index.html">jeffrey<span>.dev</span></a>
+      <ul class="nav-links">
+        <li><a href="../index.html#works">作品</a></li>
+        <li><a href="../index.html#about">關於我</a></li>
+        <li><a href="../index.html#contact">聯絡</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container">
+    <a class="back-link" href="../index.html#works">← 返回作品列表</a>
+
+    <header class="work-header">
+      <h1>網頁推薦系統</h1>
+      <p class="lead">匯入企業的用戶瀏覽紀錄，用機器學習預測並產出 Top-K 推薦網頁，幫助提升首頁點擊率。</p>
+    </header>
+
+    <div class="work-cover">
+      <img src="../assets/images/works/web-recommend/cover.webp" alt="網頁推薦系統數據分析後台，顯示 HistGradientBoosting 產出的 Top-3 推薦網頁">
+    </div>
+
+    <div class="work-layout">
+      <article class="work-content">
+        <h2>專案介紹</h2>
+        <p>企業網站每天累積大量的用戶瀏覽紀錄，但很難直接看出「哪些頁面最值得放在首頁」。這個系統就是為了解決這個問題。</p>
+        <p>所有資料分析與模型流程都寫在 Python 裡。企業只要把客戶端的原始瀏覽紀錄匯入，按下「動態預估真實 Top-K」，後端的 HistGradientBoosting（直方圖梯度提升）模型就會預測各頁面的表現，回傳最值得推薦的 Top-K 網頁，讓企業放到首頁來提升點擊率。</p>
+
+        <h2>功能特色</h2>
+        <ul>
+          <li>匯入原始瀏覽紀錄 CSV（可處理百萬筆以上點擊數據）</li>
+          <li>一鍵動態預估，產出 Top-K 推薦網頁</li>
+          <li>顯示每個頁面的預估點擊數與停留時間</li>
+          <li>以「高／中／低」標示推薦程度</li>
+          <li>自動標記頁面類型，例如深度閱讀型、潛力上升中</li>
+        </ul>
+
+        <h2>技術架構</h2>
+        <ul>
+          <li><strong>資料分析與模型</strong>：Python、HistGradientBoosting</li>
+          <li><strong>前端</strong>：React 建立數據分析後台介面</li>
+          <li><strong>部署</strong>：Vercel</li>
+        </ul>
+      </article>
+
+      <aside>
+        <dl class="meta-list">
+          <dt>製作時間</dt>
+          <dd>2026.06</dd>
+          <dt>我的角色</dt>
+          <dd>個人專案，資料分析、模型、前端全部獨立完成</dd>
+          <dt>使用技術</dt>
+          <dd class="tags">
+            <span class="tag">Python</span>
+            <span class="tag">HistGradientBoosting</span>
+            <span class="tag">React</span>
+          </dd>
+          <a class="btn btn-primary" href="https://web-recommend-frontend.vercel.app/" target="_blank" rel="noopener">開啟 Live Demo ↗</a>
+          <a class="btn btn-ghost" href="https://github.com/jeffrey911003/Big_Data" target="_blank" rel="noopener">查看 GitHub</a>
+        </dl>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <span>© <span data-year>2026</span> Jeffrey</span>
+      <a href="../index.html#works">← 返回作品列表</a>
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

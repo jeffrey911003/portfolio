@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PitchLab 棒球數據分析平台｜Jeffrey Portfolio</title>
+  <meta name="description" content="用 MLB Statcast 數據分析每一球，提供歷史數據篩選、球員比較與投球預測。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="container">
+      <a class="nav-logo" href="../index.html">jeffrey<span>.dev</span></a>
+      <ul class="nav-links">
+        <li><a href="../index.html#works">作品</a></li>
+        <li><a href="../index.html#about">關於我</a></li>
+        <li><a href="../index.html#contact">聯絡</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container">
+    <a class="back-link" href="../index.html#works">← 返回作品列表</a>
+
+    <header class="work-header">
+      <h1>PitchLab 棒球數據分析平台</h1>
+      <p class="lead">用 MLB Statcast 數據分析每一球，提供歷史數據篩選、球員比較與投球預測。</p>
+    </header>
+
+    <div class="work-cover">
+      <img src="../assets/images/works/pitchlab/cover.webp" alt="PitchLab 首頁，打者揮棒的背景與標語 Predict the play. Win smarter.">
+    </div>
+
+    <div class="work-layout">
+      <article class="work-content">
+        <h2>專案介紹</h2>
+        <p>PitchLab 是一個以 MLB Statcast 逐球數據為基礎的棒球分析網站。使用者可以挑選投手或打者，依照球季、左右打、投手角色等條件篩選，查看標準與進階的打擊數據。</p>
+        <p>後端用 Python 處理數據，並以 FastAPI 提供 API；前端用 React 建立互動介面，讓數據分析不必寫程式，點選條件就能看到結果。</p>
+
+        <h2>功能特色</h2>
+        <ul>
+          <li>歷史數據查詢：可篩選 2023～2025 球季</li>
+          <li>依投手、打者、左右手、先發／後援篩選</li>
+          <li>Standard／Advanced 兩種數據檢視模式</li>
+          <li>Compare 功能：比較不同條件的數據組合</li>
+          <li>Pitch Prediction：預測投球結果</li>
+        </ul>
+
+        <h2>技術架構</h2>
+        <ul>
+          <li><strong>資料處理</strong>：Python 整理 MLB Statcast 數據</li>
+          <li><strong>後端</strong>：FastAPI 提供數據查詢與預測 API</li>
+          <li><strong>前端</strong>：React 建立篩選與數據呈現介面</li>
+          <li><strong>部署</strong>：Render</li>
+        </ul>
+
+        <h2>畫面截圖</h2>
+        <div class="gallery">
+          <figure>
+            <img src="../assets/images/works/pitchlab/screenshot-01.webp" alt="PitchLab Historical Data 頁面，左側為球季、投手、左右手等篩選器" loading="lazy">
+            <figcaption>Historical Data：左側篩選條件，右側顯示打擊數據</figcaption>
+          </figure>
+        </div>
+      </article>
+
+      <aside>
+        <dl class="meta-list">
+          <dt>製作時間</dt>
+          <dd>2026.05</dd>
+          <dt>我的角色</dt>
+          <dd>個人專案，資料處理、後端、前端全部獨立完成</dd>
+          <dt>使用技術</dt>
+          <dd class="tags">
+            <span class="tag">Python</span>
+            <span class="tag">FastAPI</span>
+            <span class="tag">React</span>
+          </dd>
+          <a class="btn btn-primary" href="https://pitchlab-frontedd-chien.onrender.com/" target="_blank" rel="noopener">開啟 Live Demo ↗</a>
+          <a class="btn btn-ghost" href="https://github.com/jeffrey911003/new_baseball_app_frontend" target="_blank" rel="noopener">GitHub（前端）</a>
+          <a class="btn btn-ghost" href="https://github.com/jeffrey911003/new_baseball_app_backend" target="_blank" rel="noopener">GitHub（後端）</a>
+        </dl>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <span>© <span data-year>2026</span> Jeffrey</span>
+      <a href="../index.html#works">← 返回作品列表</a>
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

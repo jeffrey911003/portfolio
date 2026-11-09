@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!--
+  作品頁範本：新增作品時複製此檔為 works/<slug>.html，
+  並替換所有 {{ }} 佔位字（規則見 CLAUDE.md 第 6 節）。
+  沒有 Demo 或 GitHub 時，直接刪除對應的 <a> 按鈕。
+-->
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{作品名稱}}｜Jeffrey Portfolio</title>
+  <meta name="description" content="{{一句話簡介}}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="container">
+      <a class="nav-logo" href="../index.html">jeffrey<span>.dev</span></a>
+      <ul class="nav-links">
+        <li><a href="../index.html#works">作品</a></li>
+        <li><a href="../index.html#about">關於我</a></li>
+        <li><a href="../index.html#contact">聯絡</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container">
+    <a class="back-link" href="../index.html#works">← 返回作品列表</a>
+
+    <header class="work-header">
+      <h1>{{作品名稱}}</h1>
+      <p class="lead">{{一句話簡介}}</p>
+    </header>
+
+    <div class="work-cover">
+      <img src="../assets/images/works/{{slug}}/cover.webp" alt="{{封面圖描述}}">
+    </div>
+
+    <div class="work-layout">
+      <article class="work-content">
+        <h2>專案介紹</h2>
+        <p>{{第一段：這個作品在解決什麼問題}}</p>
+        <p>{{第二段：它怎麼運作}}</p>
+
+        <h2>功能特色</h2>
+        <ul>
+          <li>{{功能 1}}</li>
+          <li>{{功能 2}}</li>
+          <li>{{功能 3}}</li>
+        </ul>
+
+        <h2>技術架構</h2>
+        <ul>
+          <li><strong>{{層級，例如 後端}}</strong>：{{技術與用途}}</li>
+          <li><strong>{{層級，例如 前端}}</strong>：{{技術與用途}}</li>
+        </ul>
+
+        <h2>畫面截圖</h2>
+        <div class="gallery">
+          <figure>
+            <img src="../assets/images/works/{{slug}}/screenshot-01.webp" alt="{{截圖描述}}" loading="lazy">
+            <figcaption>{{截圖說明}}</figcaption>
+          </figure>
+        </div>
+      </article>
+
+      <aside>
+        <dl class="meta-list">
+          <dt>製作時間</dt>
+          <dd>{{YYYY.MM}}</dd>
+          <dt>我的角色</dt>
+          <dd>{{角色}}</dd>
+          <dt>使用技術</dt>
+          <dd class="tags">
+            <span class="tag">{{技術 1}}</span>
+            <span class="tag">{{技術 2}}</span>
+          </dd>
+          <a class="btn btn-primary" href="{{Demo 網址}}" target="_blank" rel="noopener">開啟 Live Demo ↗</a>
+          <a class="btn btn-ghost" href="{{GitHub 網址}}" target="_blank" rel="noopener">查看 GitHub</a>
+        </dl>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <span>© <span data-year>2026</span> Jeffrey</span>
+      <a href="../index.html#works">← 返回作品列表</a>
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>
